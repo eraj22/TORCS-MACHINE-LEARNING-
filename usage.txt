@@ -1,0 +1,9 @@
+java ahuraDriver.Client ahuraDriver.DriverControllerE6 port:3001 host:localhost id:SCR maxEpisodes:1 maxSteps:0 stage:2 blockerlevel:1
+
+
+Other values for stage:
+
+0, 1, and 2 are the same, although they are called warm-up, qualification and race (no difference for Ahura).
+3: the car drives very slow in the middle of the track and samples the tack every 1 second and save the results. This is used to measure complexity of the track for research purposes,
+4: is the blocker mode, the blocker level is taken into account (level 0-4 from very easy to very hard),
+5: slow driving, takes one side of the track and continues, good for overtaking tests, 
